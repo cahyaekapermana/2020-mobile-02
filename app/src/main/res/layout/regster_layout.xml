@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/leftArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/arrow_left_black"
+        tools:layout_editor_absoluteX="22dp"
+        tools:layout_editor_absoluteY="29dp" />
+
+    <TextView
+        android:id="@+id/ContinueAs"
+        android:layout_width="219dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/futura_pt_demibold"
+        android:text="Continuing As"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/of"
+        app:layout_constraintHorizontal_bias="0.207"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leftArrow" />
+
+    <TextView
+        android:id="@+id/of"
+        android:layout_width="86dp"
+        android:layout_height="35dp"
+        android:fontFamily="@font/futura_pt_demibold"
+        android:text="1 of 5"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="72dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/grey_line_full"
+        tools:layout_editor_absoluteY="132dp" />
+
+    <TextView
+        android:id="@+id/enterAsGuest2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/futura_pt_demibold"
+        android:text="Full Name"
+        android:textColor="#808080"
+        android:textSize="19sp"
+        tools:layout_editor_absoluteX="18dp"
+        tools:layout_editor_absoluteY="167dp" />
+
+    <EditText
+        android:id="@+id/Jonathan"
+        android:layout_width="330dp"
+        android:layout_height="54dp"
+        android:hint="Jonathan Doe"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="207dp" />
+
+    <EditText
+        android:id="@+id/edt_reset_code"
+        android:layout_width="330dp"
+        android:layout_height="54dp"
+        android:hint="Email Address"
+        android:textColor="#000000"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="268dp" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="330dp"
+        android:layout_height="54dp"
+        android:hint="Mobile Number"        android:textColor="#000000"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="329dp" />
+
+    <EditText
+        android:id="@+id/mobile_number"
+        android:layout_width="330dp"
+        android:layout_height="54dp"
+        android:hint="Country"
+        android:textColor="#000000"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="392dp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="330dp"
+        android:layout_height="54dp"
+        android:hint="Password"
+        android:textColor="#000000"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="453dp" />
+
+    <EditText
+        android:id="@+id/conf_pass"
+        android:layout_width="330dp"
+        android:layout_height="54dp"
+        android:hint="Confirm Password"
+        android:textColor="#000000"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="517dp" />
+
+    <EditText
+        android:id="@+id/referal"
+        android:layout_width="330dp"
+        android:layout_height="54dp"
+        android:hint="Referal Code"
+        android:textColor="#000000"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="584dp" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_red_large"
+        android:text="Next"
+        android:textColor="#FFFFFF"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="665dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

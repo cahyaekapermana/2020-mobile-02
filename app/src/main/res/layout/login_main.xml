@@ -127,5 +127,13 @@
         app:srcCompat="@drawable/fb_logo"
         tools:layout_editor_absoluteY="631dp" />
 
+    <ImageView
+        android:id="@+id/leftArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/left_arrow"
+        tools:layout_editor_absoluteX="22dp"
+        tools:layout_editor_absoluteY="29dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,8 +9,8 @@
 
     <ImageView
         android:id="@+id/logoAwal"
-        android:layout_width="462dp"
-        android:layout_height="402dp"
+        android:layout_width="486dp"
+        android:layout_height="410dp"
         android:src="@drawable/red_rectangle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

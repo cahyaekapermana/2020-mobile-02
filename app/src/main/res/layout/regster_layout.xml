@@ -83,7 +83,7 @@
         android:id="@+id/Jonathan"
         android:layout_width="330dp"
         android:layout_height="54dp"
-        android:hint="Jonathan Doe"
+        android:text="Muhammad Jonathan "
         tools:layout_editor_absoluteX="33dp"
         tools:layout_editor_absoluteY="205dp" />
 

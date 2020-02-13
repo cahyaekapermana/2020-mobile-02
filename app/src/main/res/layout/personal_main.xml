@@ -50,11 +50,13 @@
 
     <ImageView
         android:id="@+id/imageView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="48dp"
+        android:layout_height="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.656"
+        app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/edit_icon"
-        tools:layout_editor_absoluteX="229dp"
-        tools:layout_editor_absoluteY="156dp" />
+        tools:layout_editor_absoluteY="134dp" />
 
     <TextView
         android:id="@+id/textView4"
@@ -62,8 +64,7 @@
         android:layout_height="66dp"
         android:layout_marginTop="24dp"
         android:fontFamily="@font/futura_pt_demibold"
-        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam blandit erat nunc,
-        quis laoreet odio vestibulum eget."
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. ."
         android:textColor="#000000"
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"

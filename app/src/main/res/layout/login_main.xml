@@ -108,7 +108,7 @@
         tools:layout_editor_absoluteX="146dp" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/garis8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="@+id/button5"

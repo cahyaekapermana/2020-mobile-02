@@ -12,6 +12,7 @@
         android:layout_height="37dp"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
+        android:layout_marginTop="36dp"
         android:fontFamily="@font/futura_pt_demibold"
         android:text="Personal Info"
         android:textColor="#000000"
@@ -19,11 +20,13 @@
         app:layout_constraintEnd_toStartOf="@+id/of"
         app:layout_constraintHorizontal_bias="0.207"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="74dp" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="28dp"
         android:layout_marginRight="28dp"
         android:fontFamily="@font/futura_pt_demibold"
@@ -31,15 +34,19 @@
         android:textColor="@color/colorAccent"
         android:textSize="17dp"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintHorizontal_bias="0.993"
+        app:layout_constraintStart_toEndOf="@+id/imageView7"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/profile_pic"
         android:layout_width="173dp"
         android:layout_height="138dp"
-        app:srcCompat="@drawable/profile_picture"
-        tools:layout_editor_absoluteX="119dp"
-        tools:layout_editor_absoluteY="134dp" />
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ContinueAs"
+        app:srcCompat="@drawable/profile_picture" />
 
     <ImageView
         android:id="@+id/imageView6"
@@ -50,61 +57,81 @@
         tools:layout_editor_absoluteY="156dp" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:layout_width="345dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="24dp"
         android:fontFamily="@font/futura_pt_demibold"
         android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam blandit erat nunc,
         quis laoreet odio vestibulum eget."
         android:textColor="#000000"
         android:textSize="20dp"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="318dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <TextView
+        android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/futura_pt_demibold"
         android:text="About Me"
         android:textSize="20dp"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="280dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.101"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="268dp" />
 
     <TextView
+        android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
         android:fontFamily="@font/futura_pt_demibold"
         android:text="Jonathan Doe"
         android:textColor="#000000"
         android:textSize="20dp"
-        tools:layout_editor_absoluteX="261dp"
-        tools:layout_editor_absoluteY="411dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/garis" />
 
     <TextView
+        android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
         android:fontFamily="@font/futura_pt_demibold"
         android:text="Email"
         android:textSize="20dp"
-        tools:layout_editor_absoluteX="32dp"
+        app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="463dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
         android:fontFamily="@font/futura_pt_demibold"
         android:text="jonathan@gmail.com"
         android:textColor="#000000"
         android:textSize="20dp"
-        tools:layout_editor_absoluteX="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
         tools:layout_editor_absoluteY="463dp" />
 
     <TextView
+        android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
         android:fontFamily="@font/futura_pt_demibold"
         android:text="Gender"
         android:textSize="20dp"
-        tools:layout_editor_absoluteX="32dp"
+        app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="518dp" />
 
     <TextView
@@ -114,96 +141,116 @@
         android:text="Male"
         android:textColor="#000000"
         android:textSize="20dp"
-        tools:layout_editor_absoluteX="336dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.91"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
         tools:layout_editor_absoluteY="518dp" />
 
     <TextView
+        android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
         android:fontFamily="@font/futura_pt_demibold"
         android:text="Phone No."
         android:textSize="20dp"
-        tools:layout_editor_absoluteX="32dp"
+        app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="573dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
         android:fontFamily="@font/futura_pt_demibold"
         android:text="+621234567"
         android:textColor="#000000"
         android:textSize="20dp"
-        tools:layout_editor_absoluteX="268dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.997"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
         tools:layout_editor_absoluteY="573dp" />
 
     <TextView
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
         android:fontFamily="@font/futura_pt_demibold"
         android:text="City"
         android:textSize="20dp"
-        tools:layout_editor_absoluteX="32dp"
+        app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="625dp" />
 
     <TextView
+        android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
         android:fontFamily="@font/futura_pt_demibold"
         android:text="Ottawa"
         android:textColor="#000000"
         android:textSize="20dp"
-        tools:layout_editor_absoluteX="315dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
         tools:layout_editor_absoluteY="625dp" />
 
     <TextView
+        android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
         android:fontFamily="@font/futura_pt_demibold"
         android:text="Adress"
         android:textSize="20dp"
-        tools:layout_editor_absoluteX="32dp"
+        app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="677dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
         android:fontFamily="@font/futura_pt_demibold"
         android:text="296,Malang, Bandung"
         android:textColor="#000000"
         android:textSize="20dp"
-        tools:layout_editor_absoluteX="184dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView12"
         tools:layout_editor_absoluteY="677dp" />
 
     <TextView
+        android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:fontFamily="@font/futura_pt_demibold"
         android:text="Full Name"
         android:textSize="20dp"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="411dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/futura_pt_demibold"
-        android:text="Full Name"
-        android:textSize="20dp"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="411dp" />
+        app:layout_constraintEnd_toStartOf="@+id/textView6"
+        app:layout_constraintHorizontal_bias="0.184"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/garis" />
 
     <ImageView
-        android:id="@+id/imageView1"
+        android:id="@+id/garis"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.444"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/grey_line_full"
-        tools:layout_editor_absoluteY="397dp" />
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:srcCompat="@drawable/grey_line_full" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/garis8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
@@ -213,7 +260,7 @@
         tools:layout_editor_absoluteY="448dp" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/garis8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
@@ -223,7 +270,7 @@
         tools:layout_editor_absoluteY="501dp" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/garis8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
@@ -233,7 +280,7 @@
         tools:layout_editor_absoluteY="553dp" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/garis8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
@@ -242,7 +289,7 @@
         tools:layout_editor_absoluteY="610dp" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/garis8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
@@ -252,7 +299,7 @@
         tools:layout_editor_absoluteY="659dp" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/garis8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
@@ -264,9 +311,12 @@
         android:id="@+id/imageView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/arrow_left_black"
-        tools:layout_editor_absoluteX="18dp"
-        tools:layout_editor_absoluteY="16dp" />
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arrow_left_black" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
